@@ -1,0 +1,8 @@
+{
+   "pack": {
+    "description": {"translate":"advancements_roulette:datapack","fallback":"you cant decide on what advancement to do"},
+    "pack_format": 94.1,
+    "min_format": 88.0,
+    "max_format": 94.1
+  }
+}

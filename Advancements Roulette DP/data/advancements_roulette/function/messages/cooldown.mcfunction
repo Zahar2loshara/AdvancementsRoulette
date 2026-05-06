@@ -1,0 +1,1 @@
+tellraw @s [{translate:"advancements_roulette:cooldown",fallback:"The cooldown is 200 ticks and %1$s is left, please wait (20 tick in 1 second)",color:"yellow",with:[{score:{objective:"adv.roll.cooldown",name:"@s"}}]},]
