@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "description": {"translate":"advancements_roulette:resourcepack","fallback":"you cant decide on what advancement to do"},
+        "pack_format": 75,
+		"supported_formats": [
+			75,
+			75
+		],
+		"min_format": 75,
+		"max_format": 75
+    }
+}

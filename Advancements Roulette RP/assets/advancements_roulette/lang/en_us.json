@@ -1,0 +1,14 @@
+{
+    "advancements_roulette:title":"Advancement Roulette",
+    "advancements_roulette:datapack":    "If you cant decide on what advancement to do, lets this datapack help you!",
+    "advancements_roulette:resourcepack":"A example r.pack for translation and nothing else",
+    "advancements_roulette:no_command_storage":"You dont have %1$s set up and so currently it cant do anything.\nPlease recheck the %2$s or %3$s page for a guide on how to set it up",
+    "advancements_roulette:modrinth":"modrinth",
+    "advancements_roulette:modrinth_hover":"No on it yet",
+    "advancements_roulette:github":"github",
+    "advancements_roulette:click_me":"Click me!",
+    "advancements_roulette:roll.title":"And you rolled a %1$s!",
+    "advancements_roulette:roll.chat.border": "==============================",
+    "advancements_roulette:cooldown":"The cooldown is 200 ticks and %1$s is left, please wait (20 tick in 1 second)",
+    "advancements_roulette:adv.roll.cooldown": "cooldown for rerolling"
+}
