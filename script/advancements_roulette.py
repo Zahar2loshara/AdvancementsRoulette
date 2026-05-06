@@ -61,7 +61,7 @@ def path_to_identifier(path: str): #source: chat gee pee tee
 ###################
 
 def the_thing():
-    return_value = str()
+    return_value = "{\"DataVersion\":4671,\"data\":{\"contents\":{\"advancements_roulette\":{\"display\":["
     for advancement in advancements_dp_files:
         adv_json = dict()
         if advancement.strip():
@@ -76,6 +76,7 @@ def the_thing():
         except KeyError:
             return_value = return_value + "\n"
             #print(file=output_file) #print empty line in the file to indicate that the advancement doesnt have a '"display":{}'
+    return_value = return_value + "]}}}}"
     return return_value
 
 snbt = the_thing()
@@ -83,13 +84,13 @@ output_file.write(snbt)
 
 #os.chdir(root)
 if rapidnbt_installed is True:
-    snbt_form = "{\"DataVersion\":4671,\"data\":{\"contents\":{\"advancements_roulette\":{\"display\":["+snbt+"]}}}}"
-    nbt = nbtio.loads_snbt(snbt_form) 
+    #snbt_form = "{\"DataVersion\":4671,\"data\":{\"contents\":{\"advancements_roulette\":{\"display\":["+snbt+"]}}}}"
+    nbt = nbtio.loads_snbt(snbt) 
     #nbt_form = CompoundTag({"DataVersion":IntTag(4671),"data":CompoundTag({"contents":CompoundTag({"advancements_roulette":ListTag({"display":ListTag(nbt)})})})})
     if deeper_root is True:
         nbtio.dump(nbt, "../../command_storage_advancements_roulette.dat", NbtFileFormat.BIG_ENDIAN)
     elif deeper_root is False:
         nbtio.dump(nbt, "../command_storage_advancements_roulette.dat", NbtFileFormat.BIG_ENDIAN)
 
-print(f"And im done! \033[2m(i actually dont know im just a script)\033[0m Check \"{output_file.name}\" or \"command_storage_advancements_roulette.dat\" and continue on the guide.") # for text color and effect i wanna credit https://jakob-bagterp.github.io/colorist-for-python/ansi-escape-codes/ and https://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007
+print(f"And im done! \033[2m(i actually dont know im just a script)\033[0m Check \"{output_file.name}\" or \"command_storage_advancements_roulette.dat\" and continue on Running") # for text color and effect i wanna credit https://jakob-bagterp.github.io/colorist-for-python/ansi-escape-codes/ and https://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007
 output_file.close()
